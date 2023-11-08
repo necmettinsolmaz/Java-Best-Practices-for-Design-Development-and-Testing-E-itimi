@@ -28,3 +28,8 @@ docker system prune
 
 #servislerin loglarına bakma
 docker-compose logs -f (mongo, postgres)
+
+#Swagger üretmek istiyorsak eklencek kütüphane
+SpringDoc OpenAPI Starter WebMVC UI
+
+http://localhost:6060/swagger-ui/index.html
