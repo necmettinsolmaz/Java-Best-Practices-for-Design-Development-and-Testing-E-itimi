@@ -1,0 +1,30 @@
+docker-compose up -d //docker'ı çalıştırır
+
+docker-compose down //docker'ı kapatır
+
+#sadece çalışan containerleri görüntüleme
+docker ps
+
+#container durdurma
+docker stop 0902e1...
+
+#container başlatma
+docker start 0902e1...
+#docker-compose'da çalışan tü servislerin orkat logu
+docker-compose logs -f
+
+docker-compose logs -f porstgres
+
+docker-compose logs -f mongo
+
+#çalışan çalışmayan tüm containerDleri görünteleme
+docker ps -a
+
+#docker container silme, container_id ile gidebiliriz
+docker rm 0902
+
+#çalışmayan tüm containerları toplu silme
+docker system prune
+
+#servislerin loglarına bakma
+docker-compose logs -f (mongo, postgres)
