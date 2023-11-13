@@ -34,12 +34,14 @@ public class ProductServiceApplication implements CommandLineRunner {
                 .price(BigDecimal.valueOf(7000))
                 .build();
         productRepository.save(p2);
+
         Product p3 = new Product("MK123", "Makarna","Makarna 50kg", BigDecimal.valueOf(500));
         productRepository.save(p3);
+
         Product p4 = new Product();
         p4.setId("XY244");
         p4.setName("Kitaplık");
-        p4.setDescription("kitaplık");
+        p4.setDescription("kitaplık Bellona");
         productRepository.save(p4);
     }
 }
