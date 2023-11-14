@@ -5,8 +5,6 @@ import com.codershere.productservice.repository.ProductRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -21,12 +19,12 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public void deleteProduct(Product product) {
-        productRepository.delete(product);
+    public void deleteProduct(String id) {
+        productRepository.delete(findProductById(id));
     }
 
     public List<Product> listProduct(){
-        List<Product> products = new ArrayList<>();
+        List<Product> products;
         products = productRepository.findAll();
         return products;
     }
