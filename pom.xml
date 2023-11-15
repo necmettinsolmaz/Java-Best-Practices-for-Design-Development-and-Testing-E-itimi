@@ -16,6 +16,8 @@
     <modules>
         <module>product-service</module>
         <module>order-service</module>
+        <module>untitled</module>
+        <module>dicovery-service</module>
     </modules>
 
     <properties>
