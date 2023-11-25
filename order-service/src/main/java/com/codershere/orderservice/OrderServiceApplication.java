@@ -32,5 +32,6 @@ public class OrderServiceApplication implements CommandLineRunner {
         order2.setTitle("Manav Alışverişi");
         order2.setAmount(BigDecimal.valueOf(500));
         orderRepository.save(order2);
+
     }
 }
